@@ -66,6 +66,12 @@ app.get('/bad', (req, res)=>{
     })
 })
 
+aoo.get('/projects', (req, res)=>{
+    res.render('projects.hbs', {
+        pageTitle: 'Projects'
+    })
+})
+
 app.get('/*',(req, res)=>{
     res.send('404! not found')
 })
