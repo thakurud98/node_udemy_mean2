@@ -66,7 +66,7 @@ app.get('/bad', (req, res)=>{
     })
 })
 
-aoo.get('/projects', (req, res)=>{
+app.get('/projects', (req, res)=>{
     res.render('projects.hbs', {
         pageTitle: 'Projects'
     })
