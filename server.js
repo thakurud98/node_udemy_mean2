@@ -2,6 +2,7 @@ const express = require('express');
 const hbs = require('hbs')
 const app = express();
 const fs = require('fs')
+const port = process.env.PORT || 3002
 
 
 
@@ -69,6 +70,10 @@ app.get('/*',(req, res)=>{
     res.send('404! not found')
 })
 
-app.listen("3002", ()=>{
-    console.log('server is running on 3002..')
+app.listen(port, ()=>{
+    console.log(`server is running on ${port}..`)
 })
+
+
+
+// v5-9 2.47
